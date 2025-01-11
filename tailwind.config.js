@@ -11,10 +11,15 @@ module.exports = {
       },
       animation: {
         blink: 'blink 1s step-start infinite',
+        floating: 'floating 3s ease-in-out infinite',
       },
       keyframes: {
         blink: {
           '50%': { opacity: 0 },
+        },
+        floating: {
+          '0%, 100%': { transform: 'translateY(0)' }, // Start and end positions (no movement)
+          '50%': { transform: 'translateY(-15px)' },  // Midway position (slightly up)
         },
       },
     },
