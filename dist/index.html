@@ -13,33 +13,33 @@
 </style>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
-    <body class="bg-black text-white">
+    <body class="bg-black text-white" id="home">
         <header>
             <nav
                 class=" top-0 left-0 w-full bg-black z-50 border-b border-gray-800">
                 <div class=" container mx-auto flex justify-between px-4 py-4">
                     <div class="text-xl font-bold">
-                        <a href="./index.html"
+                        <a href="index.html"
                             class="text-white font-code font-extrabold text-2xl">
                             <h1
-                                class="mt-5 ml-7 font-code font-extrabold text-4xl">
+                                class="mt-5 ml-7 font-sans font-extrabold text-4xl hover:text-orange-600 transition-all duration-500 scale-0.5">
                                 Harsh </h1> </a>
                     </div>
 
                     <ul class="hidden md:flex space-x-6">
-                        <li class="mt-5"> <a href
-                                class="hover:text-orange-500 font-code font-extrabold text-2xl">Home</a></li>
-                        <li class="mt-5"><a href
-                                class="hover:text-orange-500 font-code font-extrabold text-2xl">About</a>
+                        <li class="mt-5"> <a href="index.html"
+                                class="hover:text-orange-500 font-sans font-extrabold text-2xl transition-all duration-500 scale-0.5 nav-link">Home</a></li>
+                        <li class="mt-5"><a href="#About"
+                                class="hover:text-orange-500 font-sans font-extrabold text-2xl transition-all duration-500 scale-0.5 nav-link" id="slowScrollLink">About</a>
                         </li>
-                        <li class="mt-5"><a href
-                                class="hover:text-orange-500 font-code font-extrabold text-2xl">Skills</a>
+                        <li class="mt-5"><a href="#skills"
+                                class="hover:text-orange-500 font-sans font-extrabold text-2xl transition-all duration-500 scale-0.5 nav-link">Skills</a>
                         </li>
-                        <li class="mt-5"><a href
-                                class="hover:text-orange-500 font-code font-extrabold text-2xl">Projects</a>
+                        <li class="mt-5"><a href="#projects"
+                                class="hover:text-orange-500 font-sans font-extrabold text-2xl transition-all duration-500 scale-0.5 nav-link">Projects</a>
                         </li>
-                        <li class="mt-5"><a href
-                                class="hover:text-orange-500 font-code font-extrabold text-2xl">Contact</a>
+                        <li class="mt-5"><a href="#contact"
+                                class="hover:text-orange-500 font-sans font-extrabold text-2xl transition-all duration-500 scale-0.5 nav-link">Contact</a>
                         </li>
 
                     </ul>
@@ -53,17 +53,17 @@
                 <ul id="mobile-menu"
                     class="hidden flex flex-col bg-black text-white space-y-4 px-4 py-6 md:hidden">
                     <li><a href="#home"
-                            class="hover:text-orange-500 font-code">Home</a></li>
+                            class="hover:text-orange-500 font-sans transition-all duration-500 scale-0.5">Home</a></li>
                     <li><a href="#about"
-                            class="hover:text-orange-500 font-code">About</a></li>
+                            class="hover:text-orange-500 font-sans transition-all duration-500 scale-0.5">About</a></li>
                     <li><a href="#services"
-                            class="hover:text-orange-500 font-code">Services</a></li>
+                            class="hover:text-orange-500 font-sans transition-all duration-500 scale-0.5">Services</a></li>
                     <li><a href="#portfolio"
-                            class="hover:text-orange-500 font-code">Portfolio</a></li>
+                            class="hover:text-orange-500 font-sans transition-all duration-500 scale-0.5">Portfolio</a></li>
                     <li><a href="#blog"
-                            class="hover:text-orange-500 font-code">Blog</a></li>
+                            class="hover:text-orange-500 font-sans transition-all duration-500 scale-0.5">Blog</a></li>
                     <li><a href="#contact"
-                            class="hover:text-orange-500 font-code">Contact</a></li>
+                            class="hover:text-orange-500 font-sans transition-all duration-500 scale-0.5">Contact</a></li>
                 </ul>
             </nav>
 
@@ -118,7 +118,7 @@
           </div>
 
         </section>
-        <section class="flex flex-col mx-auto p-6">
+        <section class="flex flex-col mx-auto p-6 " id="About">
             <h1 class="text-4xl font-extrabold  text-white mb-8 text-center hover:text-orange-500 transition-all duration-500 scale-0.5 cursor-pointer animate-floating">About Me</h1>
             <div class="flex flex-col md:flex-row ">
                 <div class=" flex  mb-6 justify-around w-[80%] md:mb-0">
@@ -167,58 +167,58 @@
                 </div>
             
         <div class="overflow-hidden relative">
-            <div id="marquee" class="flex space-x-8 marquee-animation">
+            <div id="marquee" class="flex space-x-8 marquee-animation animate-floating">
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0">
                     <img src="./images/html.svg" alt="HTML" class="w-20 h-20 object-contain cursor-pointer">
-                    <p class="text-center text-lg font-bold cursor-pointer">HTML</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600 ">HTML</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/css.svg" alt="CSS" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer ">CSS</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">CSS</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/javascript.svg" alt="JavaScript" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">JavaScript</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">JavaScript</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/react.svg" alt="React" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">React</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">React</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">Tailwind</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">Tailwind</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/bootstrap.svg" alt="Bootstrap" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">Bootstrap</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">Bootstrap</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/mysql.svg" alt="MySQL" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">MySQL</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">MySQL</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/c.svg" alt="C++" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">C++</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">C++</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/github (1).svg" alt="GitHub" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">GitHub</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">GitHub</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/c (1).svg" alt="GitHub" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">C</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">C</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/php (2).svg" alt="GitHub" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold cursor-pointer">PHP</p>
+                    <p class="text-center text-lg font-bold cursor-pointer hover:text-orange-600">PHP</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/git.svg" alt="GitHub" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg cursor-pointer font-bold">GIT</p>
+                    <p class="text-center text-lg cursor-pointer font-bold hover:text-orange-600">GIT</p>
                 </div>
                 <div class="flex flex-col items-center space-y-2 w-[150px] flex-shrink-0 cursor-pointer">
                     <img src="./images/java.svg" alt="GitHub" class="w-20 h-20 object-contain">
-                    <p class="text-center text-lg font-bold  cursor-pointer">Java</p>
+                    <p class="text-center text-lg font-bold  cursor-pointer text=2xl hover:text-orange-600">Java</p>
                 </div>
                 
                 

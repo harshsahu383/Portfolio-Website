@@ -41,5 +41,50 @@ const dynamicText = document.getElementById('dynamic-text');
 
     
     typeEffect();
-    // skills
-   
+  
+    async function scroll(param = 100) {
+      let position = await new Promise((resolve, reject) => {
+        setTimeout(()=> {
+          resolve(param+150)
+        },1000)
+
+      })
+      window.scrollTo({
+        top : position,
+        behavior : "smooth"
+      })
+      if(position<=1000){
+        scroll(position)
+      }
+      else
+      return 0;
+    }
+    // Add smooth scrolling with a slower speed
+document.getElementById("slowScrollLink").addEventListener("click", function (e) {
+  e.preventDefault(); // Prevent the default anchor behavior
+
+  const targetId = this.getAttribute("href"); // Get the target section (e.g., #about)
+  const targetElement = document.querySelector(targetId);
+
+  const targetPosition = targetElement.offsetTop; // Get the position of the target
+  const startPosition = window.pageYOffset; // Current scroll position
+  const distance = targetPosition - startPosition; // Distance to scroll
+  const duration = 1000; // Duration in milliseconds
+  let startTime = null;
+
+  function animationScroll(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+
+    // Easing function for smooth effect (ease-in-out)
+    const ease = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+    const run = ease(Math.min(timeElapsed / duration, 1)) * distance + startPosition;
+    window.scrollTo(0, run);
+
+    if (timeElapsed < duration) requestAnimationFrame(animationScroll);
+  }
+
+  requestAnimationFrame(animationScroll);
+});
+
